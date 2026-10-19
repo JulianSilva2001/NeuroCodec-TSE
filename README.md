@@ -1,6 +1,6 @@
 # Neurocodec Supplementary Materials
 
-This repository provides qualitative comparisons between **Neurocodec** and existing models on the Cocktail Party dataset. **M3ANet** is the existing state-of-the-art (SOTA) baseline model.
+This repository provides qualitative comparisons for **Neurocodec** on the Cocktail Party and KUL datasets. **M3ANet** is the existing state-of-the-art (SOTA) baseline model.
 
 Each sample is presented in the following order:
 
@@ -51,6 +51,52 @@ Evaluation sampling rate: **44.1 kHz**.
 | M3ANet | ![M3ANet spectrogram for Sample 3](Cocktail%20Party/Samples/Sample_3/Predicted_M3ANet_3.png) | [Listen to `Predicted_M3ANet_3.wav`](Cocktail%20Party/Samples/Sample_3/Predicted_M3ANet_3.wav) |
 | **Ours (Neurocodec)** | ![Neurocodec spectrogram for Sample 3](Cocktail%20Party/Samples/Sample_3/Predicted_Neurocodec_3.png) | [Listen to `Predicted_Neurocodec_3.wav`](Cocktail%20Party/Samples/Sample_3/Predicted_Neurocodec_3.wav) |
 | Without Mel and GAN losses *(lower performance)* | ![Ablated Neurocodec spectrogram for Sample 3](Cocktail%20Party/Samples/Sample_3/Predicted_Lmse_Only_3.png) | [Listen to `Predicted_Lmse_Only_3.wav`](Cocktail%20Party/Samples/Sample_3/Predicted_Lmse_Only_3.wav) |
+
+## KUL results
+
+Evaluation sampling rate: **8 kHz**. KUL is evaluated at 8 kHz because the original data is provided at 8 kHz.
+
+Each comparison contains the original mixture with multiple speakers, the clean ground-truth target, and the speech reconstructed by Neurocodec. These examples illustrate the model's generative extraction strategy: it reconstructs the target voice from neural signals while suppressing the interfering speaker.
+
+### KUL Sample 0
+
+| Method | Spectrogram | Audio |
+|---|---|---|
+| Mixture | ![KUL mixture spectrogram for Sample 0](KUL/Samples/Sample_0/0_mixture.png) | [Listen to `0_mixture.wav`](KUL/Samples/Sample_0/0_mixture.wav) |
+| Target | ![KUL target spectrogram for Sample 0](KUL/Samples/Sample_0/0_target.png) | [Listen to `0_target_clean.wav`](KUL/Samples/Sample_0/0_target_clean.wav) |
+| **Ours (Neurocodec)** | ![KUL Neurocodec prediction spectrogram for Sample 0](KUL/Samples/Sample_0/0_prediction.png) | [Listen to `0_prediction..wav`](KUL/Samples/Sample_0/0_prediction..wav) |
+
+### KUL Sample 1
+
+| Method | Spectrogram | Audio |
+|---|---|---|
+| Mixture | ![KUL mixture spectrogram for Sample 1](KUL/Samples/Sample_1/1_mixture.png) | [Listen to `1_mixture.wav`](KUL/Samples/Sample_1/1_mixture.wav) |
+| Target | ![KUL target spectrogram for Sample 1](KUL/Samples/Sample_1/1_target.png) | [Listen to `1_target_clean.wav`](KUL/Samples/Sample_1/1_target_clean.wav) |
+| **Ours (Neurocodec)** | ![KUL Neurocodec prediction spectrogram for Sample 1](KUL/Samples/Sample_1/1_prediction.png) | [Listen to `1_prediction.wav`](KUL/Samples/Sample_1/1_prediction.wav) |
+
+### KUL Sample 2
+
+| Method | Spectrogram | Audio |
+|---|---|---|
+| Mixture | ![KUL mixture spectrogram for Sample 2](KUL/Samples/Sample_2/2_mixture.png) | [Listen to `2_mixture.wav`](KUL/Samples/Sample_2/2_mixture.wav) |
+| Target | ![KUL target spectrogram for Sample 2](KUL/Samples/Sample_2/2_target.png) | [Listen to `2_target_clean.wav`](KUL/Samples/Sample_2/2_target_clean.wav) |
+| **Ours (Neurocodec)** | ![KUL Neurocodec prediction spectrogram for Sample 2](KUL/Samples/Sample_2/2_prediction.png) | [Listen to `2_prediction.wav`](KUL/Samples/Sample_2/2_prediction.wav) |
+
+### KUL Sample 3
+
+| Method | Spectrogram | Audio |
+|---|---|---|
+| Mixture | ![KUL mixture spectrogram for Sample 3](KUL/Samples/Sample_3/3_mixture.png) | [Listen to `3_mixture.wav`](KUL/Samples/Sample_3/3_mixture.wav) |
+| Target | ![KUL target spectrogram for Sample 3](KUL/Samples/Sample_3/3_target.png) | [Listen to `3_target_clean.wav`](KUL/Samples/Sample_3/3_target_clean.wav) |
+| **Ours (Neurocodec)** | ![KUL Neurocodec prediction spectrogram for Sample 3](KUL/Samples/Sample_3/3_prediction.png) | [Listen to `3_prediction.wav`](KUL/Samples/Sample_3/3_prediction.wav) |
+
+### KUL Sample 4
+
+| Method | Spectrogram | Audio |
+|---|---|---|
+| Mixture | ![KUL mixture spectrogram for Sample 4](KUL/Samples/Sample_4/4_mixture.png) | [Listen to `4_mixture.wav`](KUL/Samples/Sample_4/4_mixture.wav) |
+| Target | ![KUL target spectrogram for Sample 4](KUL/Samples/Sample_4/4_target.png) | [Listen to `4_target_clean.wav`](KUL/Samples/Sample_4/4_target_clean.wav) |
+| **Ours (Neurocodec)** | ![KUL Neurocodec prediction spectrogram for Sample 4](KUL/Samples/Sample_4/4_prediction.png) | [Listen to `4_prediction.wav`](KUL/Samples/Sample_4/4_prediction.wav) |
 
 ## Datasets and sampling rates
 
