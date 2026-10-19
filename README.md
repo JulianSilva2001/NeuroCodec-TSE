@@ -1,4 +1,4 @@
-# NeuroCodec-TSE Supplementary Materials
+# NeuroCodec Supplementary Materials
 
 ## Overview
 
